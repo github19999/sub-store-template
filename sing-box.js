@@ -28,9 +28,6 @@ config.outbounds.map(i => {
   if (['jp', 'jp-auto'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /日本|jp|japan|🇯🇵/i))
   }
-  if (['kr', 'kr-auto'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /韩|kr|Korea|k/i))
-  }
   if (['sg', 'sg-auto'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /^(?!.*(?:us)).*(新|sg|singapore|🇸🇬)/i))
   }
